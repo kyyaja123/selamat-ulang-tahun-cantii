@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+
+<!-- RESPONSIVE HP -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DigitalScrapbook keysa</title>
+<link rel="icon" type="image/png" href="logo.jpg">
+<!-- FONT MOBILE FRIENDLY -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== MENU AWAL ===== -->
+<section id="menuAwal" class="page active">
+  <div class="card">
+    <h1>🎉 Birthday Scrapbook 💙</h1>
+    <p>Dibukaa yaa cantikk</p>
+    <button onclick="showPage('menuPilih')">Masuk</button>
+  </div>
+</section>
+
+<!-- ===== MENU PILIH ===== -->
+<section id="menuPilih" class="page">
+  <div class="card">
+    <h2>Pilih Menu</h2>
+    <button onclick="showPage('scrapbook')">📘 Buka Scrapbook</button>
+    <button onclick="showPage('galeri')">Lihat Foto</button>
+    <button class="back" onclick="showPage('menuAwal')">⬅ Kembali</button>
+  </div>
+</section>
+
+<!-- ===== SCRAPBOOK ===== -->
+<section id="scrapbook" class="page">
+  <div class="book">
+    <h1>🎂 Happy Birthday Keysaa 🎂</h1>
+
+    <div class="note">
+      happy birthday manusia favoritku,<br>
+      selamatt beranjakk lebih dewasa,<br>
+      make a wishh semoga segala doa dan harapan kamu segeraa terkabulkan yaa,<br>
+      panjangg umurr yaa cantikk<br>
+      smakinn lancar rezekinyaa<br>
+      slaluu bahagiaa untuk kamu 💙
+    </div>
+
+    <button onclick="confettiBurst()">Surprise 🎉</button>
+    <button class="back" onclick="showPage('menuPilih')">⬅ Kembali</button>
+  </div>
+</section>
+
+<!-- ===== GALERI ===== -->
+<section id="galeri" class="page">
+  <div class="book">
+    <h1>foto imutt kamu</h1>
+
+    <div class="slider">
+      <div class="slides" id="slides">
+        <img src="img1.jpeg">
+        <img src="img2.jpeg">
+        <img src="img3.jpeg">
+        <img src="img4.jpeg">
+        <img src="img5.jpeg">
+        <img src="img6.jpeg">
+        <img src="img7.jpeg">
+        <img src="img8.jpeg">
+        <img src="img9.jpeg">
+        <img src="img10.jpeg">
+        <img src="img1.jpeg"><!-- clone -->
+      </div>
+    </div>
+
+    <p class="ket"></p>
+
+    <button class="back" onclick="showPage('menuPilih')">⬅ Kembali</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
